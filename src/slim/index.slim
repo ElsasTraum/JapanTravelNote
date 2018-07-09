@@ -5,20 +5,52 @@ head
   title 東京旅遊店家筆記
 body
   .wrapper
-    .container
+    .container-fluid
       h1 東京旅遊店家筆記
-      ul#myTab.nav.nav-tabs role="tablist"
+      ul#myTab.nav.nav-pills.nav-fill role="tablist"
         li.nav-item
           a#home-tab.nav-link.active aria-controls="favorite" aria-selected="true" data-toggle="tab" href="#favorite" role="tab"  愛店
         li.nav-item
           a#profile-tab.nav-link aria-controls="wishlist" aria-selected="false" data-toggle="tab" href="#wishlist" role="tab"  想去未去
+      .row
+        .scroll-nav
+        main.main
+          #favorite.tab-pane.fade.show.active aria-labelledby="favorite-tab" role="tabpanel"
+            h2#shinjuku 新宿
+            p.description 大到靠北讓人疑惑這是哪裡我是誰的超巨大迷宮車站。沒事不要到這裡來（真的）
+            .shop-list
+              .shop-card-container
+                .card
+                  .card-body
+                    h5.card-title 風雲児
+                    h6.card-subtitle.mb-2.text-muted 沾麵有名的拉麵店
+                    p.card-text 沾麵超級好吃，麵體本身的味道和咬勁很棒。他們家拉麵倒是很普通不用試了（喂）一如傳統日式麵店店面非常小（15個位子），不過因為翻桌快的關係排隊也不用很久。店面雖說是在巷子內，不過從大馬路轉進去拐約兩個彎就看得到不算難找。離新宿站走路約10min，當然，前提是你沒有在新宿站內迷路的話（爆）
+                    a.card-link href="http://www.fu-unji.com/" target="_blank"  官網
+                    a.card-link href="https://tabelog.com/tokyo/A1304/A130401/13044091/" target="_blank"  食べログ
+                    a.card-link href="https://www.google.com.tw/maps/place/%E9%A2%A8%E9%9B%B2%E5%85%92/@35.6868449,139.6966459,15z/data=!4m5!3m4!1s0x0:0x2d6a64fb6fab829c!8m2!3d35.6868449!4d139.6966459" target="_blank"  GoogleMap
 
 
-      #favorite.tab-pane.fade.show.active aria-labelledby="favorite-tab" role="tabpanel"
-        h2 新宿
-        p.description 大到靠北讓人疑惑這是哪裡我是誰的超巨大迷宮車站。沒事不要到這裡來（真的）
-        .shop-list
-          .shop-card-container
-            .shop-card
 
-      #wishlist.tab-pane.fade aria-labelledby="wishlist-tab" role="tabpanel"
+
+            h2#ikebukuro 池袋
+            p.description
+              | 迷宮車站2號。有很多百貨公司和車站共構，西武百貨在東口，東武百貨在西口（？！），一個不小心就會逛到暈頭。
+              br
+              | 整體而言個人覺得池袋比新宿等地好逛，生活氣氛重一些（西門町的感覺？）是個可以一次解決宅物和雜貨購物需求的地方。其代表就是乙女路旁的SunShine City，內部有賣雜貨的Loft和Lush，也有小浣熊或神奇寶貝專賣店之類的宅店（？）
+              br
+              | 個人建議要來池袋晃還是挑平日，假日人潮頗驚人，搭電車時也盡可能避開尖峰時段。因為不只年輕族群，連媽媽們都會來池袋的百貨採買。
+            .shop-list
+              .shop-card-container
+                .card
+                  .card-body
+                    h5.card-title アニメイト池袋本店
+                    / h6.card-subtitle.mb-2.text-muted 沾麵有名的拉麵店
+                    p.card-text
+                      | 個人覺得太多層樓外加電梯不算好等有點煩，不過畢竟是旗艦店，可以一次掃完想要的官方宅物還不錯。有時候會有展覽。
+                      br
+                      | p.s.店內禁止攝影
+                    a.card-link href="https://www.google.com.tw/maps/place/Animate+Ikebukuro+Honten/@35.7311865,139.7133352,17z/data=!3m1!4b1!4m5!3m4!1s0x60188d6f4361458b:0x503df2e68ddac61a!8m2!3d35.7311865!4d139.7155239" target="_blank"  GoogleMap
+
+          #wishlist.tab-pane.fade aria-labelledby="wishlist-tab" role="tabpanel"
+
+include script

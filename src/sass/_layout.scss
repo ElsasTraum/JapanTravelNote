@@ -6,7 +6,7 @@
 //   00.Global
 //   01.Header
 //   02.Content
-//   03.Footer
+//   03.Scroll Nav
 //
 // ************************************/
 
@@ -19,7 +19,6 @@ body,
 .wrapper {
   height: auto;
   min-height: 100vh;
-  background-color: $gray-800;
 }
 
 /* -------------------------------------
@@ -30,6 +29,36 @@ body,
 //   02.Content
 // ----------------------------------- */
 
+.main {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(8);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include make-col(10);
+  }
+}
+
 /* -------------------------------------
 //   03.Footer
 // ----------------------------------- */
+
+.scroll-nav {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(xs) {
+    display: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(4);
+    @include make-col-offset(8);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include make-col(2);
+    @include make-col-offset(10);
+  }
+}

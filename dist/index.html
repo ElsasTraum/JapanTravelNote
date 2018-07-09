@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <link href="css/fontawesome.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <title>東京旅遊店家筆記</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container-fluid">
+      <h1>
+        東京旅遊店家筆記
+      </h1>
+      <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a aria-controls="favorite" aria-selected="true" class="nav-link active" data-toggle="tab" href="#favorite" id="home-tab" role="tab"> 愛店</a>
+        </li>
+        <li class="nav-item">
+          <a aria-controls="wishlist" aria-selected="false" class="nav-link" data-toggle="tab" href="#wishlist" id="profile-tab" role="tab"> 想去未去</a>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="scroll-nav"></div>
+        <main class="main">
+          <div aria-labelledby="favorite-tab" class="tab-pane fade show active" id="favorite" role="tabpanel">
+            <h2 id="shinjuku">
+              新宿
+            </h2>
+            <p class="description">
+              大到靠北讓人疑惑這是哪裡我是誰的超巨大迷宮車站。沒事不要到這裡來（真的）
+            </p>
+            <div class="shop-list">
+              <div class="shop-card-container">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      風雲児
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      沾麵有名的拉麵店
+                    </h6>
+                    <p class="card-text">
+                      沾麵超級好吃，麵體本身的味道和咬勁很棒。他們家拉麵倒是很普通不用試了（喂）一如傳統日式麵店店面非常小（15個位子），不過因為翻桌快的關係排隊也不用很久。店面雖說是在巷子內，不過從大馬路轉進去拐約兩個彎就看得到不算難找。離新宿站走路約10min，當然，前提是你沒有在新宿站內迷路的話（爆）
+                    </p>
+                    <a class="card-link" href="http://www.fu-unji.com/" target="_blank"> 官網</a><a class="card-link" href="https://tabelog.com/tokyo/A1304/A130401/13044091/" target="_blank"> 食べログ</a><a class="card-link" href="https://www.google.com.tw/maps/place/%E9%A2%A8%E9%9B%B2%E5%85%92/@35.6868449,139.6966459,15z/data=!4m5!3m4!1s0x0:0x2d6a64fb6fab829c!8m2!3d35.6868449!4d139.6966459" target="_blank"> GoogleMap</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 id="ikebukuro">
+              池袋
+            </h2>
+            <p class="description">
+              迷宮車站2號。有很多百貨公司和車站共構，西武百貨在東口，東武百貨在西口（？！），一個不小心就會逛到暈頭。<br />整體而言個人覺得池袋比新宿等地好逛，生活氣氛重一些（西門町的感覺？）是個可以一次解決宅物和雜貨購物需求的地方。其代表就是乙女路旁的SunShine City，內部有賣雜貨的Loft和Lush，也有小浣熊或神奇寶貝專賣店之類的宅店（？）<br />個人建議要來池袋晃還是挑平日，假日人潮頗驚人，搭電車時也盡可能避開尖峰時段。因為不只年輕族群，連媽媽們都會來池袋的百貨採買。
+            </p>
+            <div class="shop-list">
+              <div class="shop-card-container">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      アニメイト池袋本店
+                    </h5>
+                    <p class="card-text">
+                      個人覺得太多層樓外加電梯不算好等有點煩，不過畢竟是旗艦店，可以一次掃完想要的官方宅物還不錯。有時候會有展覽。<br />p.s.店內禁止攝影
+                    </p>
+                    <a class="card-link" href="https://www.google.com.tw/maps/place/Animate+Ikebukuro+Honten/@35.7311865,139.7133352,17z/data=!3m1!4b1!4m5!3m4!1s0x60188d6f4361458b:0x503df2e68ddac61a!8m2!3d35.7311865!4d139.7155239" target="_blank"> GoogleMap</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div aria-labelledby="wishlist-tab" class="tab-pane fade" id="wishlist" role="tabpanel"></div>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
