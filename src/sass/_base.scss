@@ -1,0 +1,35 @@
+/* *************************************
+//
+//   Project Title -- Base
+//   -> 設定標籤元素的預設值、Reset
+//
+// ************************************/
+
+a {
+  @include hover-focus-active {
+    text-decoration: none;
+    outline: none;
+    transition: all .2s ease-in-out;
+  }
+}
+
+/*
+a:visited {
+  color: $link-color;
+}
+*/
+
+em {
+  font-style: normal;
+}
+
+.small,
+small {
+  font-size: 75%;
+  margin-left: .2em;
+}
+
+[type="button"],
+[type="submit"] {
+  cursor: pointer;
+}

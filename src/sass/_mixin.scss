@@ -1,0 +1,77 @@
+/* *************************************
+//
+//   Project Title -- Mixin
+//
+//   01.連結樣式簡寫
+//   02.Placeholder
+//
+// ************************************/
+
+@mixin border-box {
+  &,
+  & * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/* -------------------------------------
+//   01.連結樣式簡寫
+// ---------------------------------- */
+
+@mixin link {
+  &,
+  &:visited {
+    @content;
+  }
+}
+
+@mixin link-hover {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    @content;
+  }
+}
+
+@mixin link-all {
+  &,
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    @content;
+  }
+}
+
+/* -------------------------------------
+//   02.Placeholder
+// ---------------------------------- */
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+
+    @content;
+  }
+
+  &:-moz-placeholder {
+    opacity: 1;
+
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &:placeholder-shown {
+    @content;
+  }
+}
