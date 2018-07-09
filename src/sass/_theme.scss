@@ -1,0 +1,46 @@
+/* *************************************
+//
+//   Project Title -- Theme
+//   -> 主視覺定義
+//
+//   01.Color
+//   02.Typography
+//   03.Module
+//
+// ************************************/
+
+/* -------------------------------------
+//   01.Color
+// ---------------------------------- */
+
+/* -------------------------------------
+//   02.Typography
+// ---------------------------------- */
+
+/* ----- 修正微軟正黑體粗體 -----
+
+@font-face {
+  font-family: 'Microsoft JHengHei Repair';
+  unicode-range: U+7db0, U+78A7, U+7B75;
+  // ASCII (碧筵綰)
+  font-style: normal;
+  font-weight: bold;
+  src: local(Yu Gothic), local(MS Gothic);
+}
+
+/* ----- 一般粗細的時候改回微軟正黑 -----
+
+@font-face {
+  font-family: 'Microsoft JHengHei Repair';
+  unicode-range: U+7db0, U+78A7, U+7B75;
+  // ASCII (碧筵綰)
+  font-style: normal;
+  font-weight: normal;
+  src: local(微軟正黑體);
+} */
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans CJK TC", "Noto Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+/* -------------------------------------
+//   03.Module
+// ---------------------------------- */

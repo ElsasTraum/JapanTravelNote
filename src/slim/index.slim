@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html lang="zh-TW"
+head
+  include head
+  title 東京旅遊店家筆記
+body
+  .wrapper
+    .container
+      h1 東京旅遊店家筆記
+      ul#myTab.nav.nav-tabs role="tablist"
+        li.nav-item
+          a#home-tab.nav-link.active aria-controls="favorite" aria-selected="true" data-toggle="tab" href="#favorite" role="tab"  愛店
+        li.nav-item
+          a#profile-tab.nav-link aria-controls="wishlist" aria-selected="false" data-toggle="tab" href="#wishlist" role="tab"  想去未去
+
+
+      #favorite.tab-pane.fade.show.active aria-labelledby="favorite-tab" role="tabpanel"
+        h2 新宿
+        p.description 大到靠北讓人疑惑這是哪裡我是誰的超巨大迷宮車站。沒事不要到這裡來（真的）
+        .shop-list
+          .shop-card-container
+            .shop-card
+
+      #wishlist.tab-pane.fade aria-labelledby="wishlist-tab" role="tabpanel"
