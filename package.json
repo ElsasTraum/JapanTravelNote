@@ -1,0 +1,28 @@
+{
+  "name": "JapanTravelNote",
+  "version": "1.0.0",
+  "description": "個人日本東京旅遊筆記。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ https://github.com/ElsasTraum/JapanTravelNote.git"
+  },
+  "author": "Elsa Cheng",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-slim": "^0.3.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "devDependencies": {
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}

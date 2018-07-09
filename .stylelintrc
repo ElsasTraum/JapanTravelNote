@@ -1,0 +1,20 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["mixin", "extend", "include", "content", "if", "else"]
+      }
+    ],
+    "number-leading-zero": "never",
+    "max-empty-lines": 2,
+    "at-rule-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "no-descending-specificity": ,
+    "property-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "selector-type-no-unknown": ,
+    "value-no-vendor-prefix": true
+  }
+}
